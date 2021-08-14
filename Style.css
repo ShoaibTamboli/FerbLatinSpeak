@@ -1,0 +1,11 @@
+.txt-inputcontainer{
+    border: 1px solid grey;
+    padding: 5rem;
+    margin: 2rem;
+}
+
+.txt-outputcontainer{
+    border: 1px solid grey;
+    padding: 5rem;
+    margin: 2rem;
+}
