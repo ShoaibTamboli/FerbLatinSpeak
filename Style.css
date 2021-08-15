@@ -9,3 +9,7 @@
     padding: 5rem;
     margin: 2rem;
 }
+
+#btn-translate{
+    display: inline-block;
+}
