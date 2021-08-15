@@ -1,15 +1,74 @@
-.txt-inputcontainer{
-    border: 1px solid grey;
-    padding: 5rem;
-    margin: 2rem;
+:root {
+    --background: rgb(196, 147, 147);
+    --grey: rgb(51, 51, 51);
 }
 
-.txt-outputcontainer{
-    border: 1px solid grey;
-    padding: 5rem;
-    margin: 2rem;
+* {
+    font-family: cursive;
+    padding: 0rem;
+    margin: 0rem;
 }
 
-#btn-translate{
-    display: inline-block;
+body {
+
+    background-image: url(/images/phineasandferb.jpg);
+    background-size: cover;
+
+}
+
+.txt-inputcontainer {
+    border: 1px solid --grey;
+    padding: 5rem;
+    margin: 2rem auto 2rem;
+    width: 70%;
+    display: block;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.txt-outputcontainer {
+    border: 1px solid grey;
+    padding: 5rem;
+    width: 70%;
+    display: block;
+    margin: 2rem auto;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+}
+
+#btn-translate {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px --grey solid;
+}
+
+
+nav {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color:var(--grey);
+    opacity: 0.7;
+    font-weight: bolder;
+    color: #fff;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid --grey;
+}
+
+footer{
+    
+    text-align: center;
+    border: 1px solid --grey;
+    background-color:var(--grey);
+    padding: 1rem;
+    opacity: 0.7;
+    border-top-right-radius: 1rem;
+    color: #fff;
 }
