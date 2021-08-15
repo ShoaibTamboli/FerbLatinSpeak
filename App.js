@@ -2,14 +2,14 @@ var inputText = document.querySelector('.txt-inputcontainer');
 var outputText = document.querySelector('.txt-outputcontainer');
 var button = document.querySelector('#btn-translate');
 
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+//var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
+var serverURL="https://api.funtranslations.com/translate/ferb-latin.json";
 
 
 
-
-
-function getTranslateURL(text){
-    return serverURL +"?"+"text" +text;
+function getTranslateURL(text) {
+    return serverURL + "?" + "text=" + text;
 }
 
 
@@ -19,10 +19,12 @@ button.addEventListener("click", clickhandler)
 function clickhandler() {
 
 
-    console.log(inputText.value)
-    console.log("Clicked")
+   // outputText.innerText="thishishihs"+inputText.value;
+    var userinputText = inputText.value;
+    // console.log(inputText.value)
+    // console.log("Clicked")
 
-    fetch(getTranslateURL(text))
-    .then (response =>response.json)
-    .then( json=> console.log(json))
+    fetch(getTranslateURL(userinputText))
+        .then(response => response.json())
+        .then(json => outputText.innerText=json.contents.translated)
 }
