@@ -16,6 +16,13 @@ function getTranslateURL(text) {
 button.addEventListener("click", clickhandler)
 
 
+function errorhandler(errorhandle) {
+    console.log("Some this went wrong: ", errorhandle);
+    alert("Some thing went wrong:" + errorhandle)
+    alert("Please try after some time ")
+}
+
+
 function clickhandler() {
 
 
@@ -27,4 +34,5 @@ function clickhandler() {
     fetch(getTranslateURL(userinputText))
         .then(response => response.json())
         .then(json => outputText.innerText=json.contents.translated)
+        .catch(errorhandler)
 }
