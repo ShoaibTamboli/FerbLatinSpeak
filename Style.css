@@ -7,12 +7,13 @@
     font-family: cursive;
     padding: 0rem;
     margin: 0rem;
+    box-sizing: border-box;
 }
 
 body {
-
-    background-image: url(/images/phineasandferb.jpg);
-    background-size: cover;
+    background-image: url(/images/phineas\ and\ ferb.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -34,7 +35,7 @@ body {
     padding: 5rem;
     width: 70%;
     display: block;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
     opacity: 0.8;
     border-radius: 0.5rem;
     font-weight: bolder;
@@ -71,4 +72,8 @@ footer{
     opacity: 0.7;
     border-top-right-radius: 1rem;
     color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-top: 1rem;
 }
